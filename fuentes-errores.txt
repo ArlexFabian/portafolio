@@ -1,0 +1,36 @@
+Recursos:
+
+http://www.cssscript.com/css-only-crossfading-background-slideshow/
+https://minitutoriales.blogspot.com/2013/10/como-mostrar-la-fecha-actual-con.html
+http://www.ciudadblogger.com/2009/12/hacer-que-las-imagenes-se-arrastren.html
+http://www.emenia.es/utilizando-css3-hoy-2-colores-y-opacidad-utilizando-rbga/
+https://github.com/robnyman/robnyman.github.com/tree/master/fullscreen
+http://lineadecodigo.com/css/boton-con-imagen-de-fondo-en-css/
+http://www.esandra.com/usa-una-imagen-responsive-a-pantalla-completa/
+http://blog.rolandopalermo.com/2013/03/full-screen-background-image-html-css.html
+http://www.actualidadjquery.es/ejemplos/27/index.html
+https://www.google.com/jsapi
+
+Erroes Solucionados
+
+- Iconos no se movian a causa de el mal uso de css / se inserta estilo en html5 y se soluciona.
+- fullscreen no muestra imagen de fondo/ forma css3 no compatible  solucionado:
+css//
+html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #full-screen-background-image {
+        z-index: -999;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+html//
+<img alt="full screen background image" src= "img/005.jpg" id="full-screen-background-image" />
+- imagen fullscreen no se puede posicionar, esto es por que le asia falta un div para darle el estilo// solucionado.
