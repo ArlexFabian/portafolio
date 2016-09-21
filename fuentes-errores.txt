@@ -10,8 +10,10 @@ http://www.esandra.com/usa-una-imagen-responsive-a-pantalla-completa/
 http://blog.rolandopalermo.com/2013/03/full-screen-background-image-html-css.html
 http://www.actualidadjquery.es/ejemplos/27/index.html
 https://www.google.com/jsapi
-
+program WOW Slider
+http://wowslider.com/es/help/como-hacer-que-la-presentaci%C3%B3n-sea-el-fondo-de-pantalla-de-tu-pagina-180.html
 Erroes Solucionados
+http://www.taringa.net/post/hazlo-tu-mismo/18056875/Animacion-CSS3-Slider-Background-animacion-en-el-fondo.html
 
 - Iconos no se movian a causa de el mal uso de css / se inserta estilo en html5 y se soluciona.
 - fullscreen no muestra imagen de fondo/ forma css3 no compatible  solucionado:
@@ -34,3 +36,4 @@ html, body {
 html//
 <img alt="full screen background image" src= "img/005.jpg" id="full-screen-background-image" />
 - imagen fullscreen no se puede posicionar, esto es por que le asia falta un div para darle el estilo// solucionado.
+- conflictos con js // sesolucionan cambiando de posicion el directorio 

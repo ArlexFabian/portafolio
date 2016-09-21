@@ -6,8 +6,11 @@
     <title>Arlex</title>
     <meta name="description" content="Web Windows">
     <link rel="stylesheet" href="css/main.css">
-       </script> 
-       <!----------Iconospantallamover----------->
+       	<!-- Start fondo slider -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!--------- End fondo slider----------- -->  
+     <!----------Iconospantallamover----------->
        <!-- Prototype y Scriptaculous-->
 <script src='js/jsapi.js'></script>
 <script>
@@ -15,9 +18,29 @@ google.load("prototype","1.7.0.0");
 google.load("scriptaculous", "1.9.0");
 </script>
 <!-- Prototype y Scriptaculous-->
-       <!----------Icons///Icons----------------->
+       <!----------Icons///Icons----------------->    
   </head>
   <body>
+   <!---------------start fondo slider-------------->
+   <body style="background-color:#6c6c6c;margin:0; z-index:-9999;">
+	
+	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="data1/images/001.jpg" alt="001" title="001" id="wows1_0"/></li>
+		<li><img src="data1/images/002.jpg" alt="002" title="002" id="wows1_1"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/003.jpg" alt="bootstrap carousel" title="003" id="wows1_2"/></a></li>
+		<li><img src="data1/images/004.jpg" alt="004" title="004" id="wows1_3"/></li>
+	</ul></div>
+<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a> by WOWSlider.com v8.7</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+
+    <!---------------End fondo slider --------------->
+  <div class="content">
     <div id="barra"> 
        </div>
           <div id="barranom"> </div>       
@@ -29,14 +52,7 @@ google.load("scriptaculous", "1.9.0");
             ECTBI
          </div>
       <div id="logou"> </div>
-  <div id="reloj"></div>
-   <img alt="full screen background image" src= "img/005.jpg" id="full-screen-background-image" />
-  <!--------------Full web----------------------->
-  <div id="fullsc">
-    <img id="view-fullscreen"  src="img/ampliar.png" title="fullscreen" />
-     </div>
-    <!---------------//Full web//------------------> 
-   
+  <div id="reloj"></div> 
    <!------------------Icons move--------------------->
    
  <img id="ico1" style="cursor:move; border:0px;"
@@ -51,14 +67,17 @@ left:-302px;"src="img/multim.png"/>
 left:-407px;"src="img/help.png"/><script type="text/javascript">new Draggable('ico5');     </script>
     
    <!--------------Icons///Icons---------------------->
-  <!--------------------scripts--------------------->
 
-  <script type="text/javascript"> function startTime(){ today=new Date(); h=today.getHours(); m=today.getMinutes(); s=today.getSeconds(); m=checkTime(m); s=checkTime(s); document.getElementById('reloj').innerHTML=h+":"+m+":"+s; t=setTimeout('startTime()',500);} function checkTime(i) {if (i<10) {i="0" + i;}return i;} window.onload=function(){startTime();} </script> </div>
+  <!-------------scripts tiempo ------------------>
+
+  <script type="text/javascript"> function startTime(){ today=new Date(); h=today.getHours(); m=today.getMinutes(); s=today.getSeconds(); m=checkTime(m); s=checkTime(s); document.getElementById('reloj').innerHTML=h+":"+m+":"+s; t=setTimeout('startTime()',500);} function checkTime(i) {if (i<10) {i="0" + i;}return i;} window.onload=function(){startTime();} </script> 
   <div id="fecha">
   <script type="text/JavaScript"> var f = new Date(); document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()); </script>
+  
  </div>
- <!--------------Full web----------------------->
-    <script src="js/base.js"></script>
+ 
+    
   
 </body>
 </html>
+
