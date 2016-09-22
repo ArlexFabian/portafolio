@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Arlex</title>
     <meta name="description" content="Web Windows">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> 
+     <!----------------popup f11----------------->  
+       <link href="css/shadowbox.css" rel="stylesheet" type="text/css" />  
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>  
+<!----------------////popup f11----------------->
+<script type="text/javascript" src="js/shadowbox.js"></script>  
+<script type="text/javascript"> Shadowbox.init({ language: "es", players:  ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv'] }); </script>  
+<script type="text/javascript">  
+$(document).ready(function(){  
+    setTimeout(function() {  
+        Shadowbox.open({  
+            content:    '<div><img src="img/f11.png"></div>',  
+            player:     "html",  
+            title:      "xwin",  
+            width:      438,  
+            height:     35, 
+			top:         25,		    
+			
+        });  
+    }, 50);  
+});  
+</script>  
+
+        <!--------------//popup f11//--------------->   
        	<!-- Start fondo slider -->
 	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
 	<script type="text/javascript" src="engine1/jquery.js"></script>
-	<!--------- End fondo slider----------- -->  
+	<!--------- End fondo slider----------- -->   
      <!----------Iconospantallamover----------->
        <!-- Prototype y Scriptaculous-->
 <script src='js/jsapi.js'></script>
@@ -18,9 +42,11 @@ google.load("prototype","1.7.0.0");
 google.load("scriptaculous", "1.9.0");
 </script>
 <!-- Prototype y Scriptaculous-->
-       <!----------Icons///Icons----------------->    
+       <!----------Icons///Icons----------------->  
+        
   </head>
   <body>
+  
    <!---------------start fondo slider-------------->
    <body style="background-color:#6c6c6c;margin:0; z-index:-9999;">
 	
@@ -73,11 +99,10 @@ left:-407px;"src="img/help.png"/><script type="text/javascript">new Draggable('i
   <script type="text/javascript"> function startTime(){ today=new Date(); h=today.getHours(); m=today.getMinutes(); s=today.getSeconds(); m=checkTime(m); s=checkTime(s); document.getElementById('reloj').innerHTML=h+":"+m+":"+s; t=setTimeout('startTime()',500);} function checkTime(i) {if (i<10) {i="0" + i;}return i;} window.onload=function(){startTime();} </script> 
   <div id="fecha">
   <script type="text/JavaScript"> var f = new Date(); document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()); </script>
-  
- </div>
  
-    
-  
+ </div>
 </body>
 </html>
+
+
 
